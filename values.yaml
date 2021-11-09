@@ -1,0 +1,24 @@
+replicaCount: 3
+revisionHistoryLimit: 1
+image:
+  repository: nftjapan/nft-japan-gateway
+  tag: dev_05082021.1
+  pullPolicy: IfNotPresent
+  resources:
+    requests:
+      cpu: 200m
+      memory: 300Mi
+livenessProbe:
+  initialDelaySeconds: 30
+  periodSeconds: 10
+service:
+  name: blockchain-gateway
+
+services:
+  apiPrefix: 
+  contractAddress: 0xd38FfAA82398468Dad1A5A442c72365014E44cDB
+  privateKey: 0xaa30e816d1dfb91e70b259711f39a63b310a0e10a47e11b0e1f900c7e20a7ab6
+  tomozAddress: 
+  depositFee: 
+  network: 
+  apiUrl: 

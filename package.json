@@ -1,0 +1,48 @@
+{
+  "name": "nft-japan-contract",
+  "version": "1.0.0",
+  "description": "nft japan smart contract",
+  "scripts": {
+    "compile": "yarn hardhat compile",
+    "console": "yarn hardhat console --no-compile",
+    "deploy": "yarn hardhat run scripts/deploy.js",
+    "deploy:rinkeby": "yarn hardhat run scripts/deploy.js --network rinkeby",
+    "deploy:tomotestnet": "yarn hardhat run scripts/deploy-uups.js --network tomotestnet",
+    "deploy:tomomainnet": "yarn hardhat run scripts/deploy-uups.js --network tomomainnet",
+    "test": "yarn hardhat test",
+    "start:test": "node ./app/index.js",
+    "start:dev": "nodemon ./app/index.js",
+    "start:production": "node ./app/index.js",
+    "start": "node ./app/index.js",
+    "start:staging": "node ./app/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.jetbrains.space/blockchainlab/nft-japan/NFT-JAPAN-CONTRACT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ethersproject/experimental": "^5.5.0",
+    "@openzeppelin/contracts": "^4.1.0",
+    "@openzeppelin/contracts-upgradeable": "^4.3.2",
+    "@openzeppelin/hardhat-upgrades": "^1.11.0",
+    "axios": "^0.21.1",
+    "dotenv": "^9.0.2",
+    "events": "^3.3.0",
+    "express": "^4.17.1",
+    "global": "^4.4.0",
+    "globby": "^11.0.3",
+    "hardhat": "^2.3.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.9"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@nomiclabs/hardhat-waffle": "^2.0.0",
+    "chai": "^4.2.0",
+    "ethereum-waffle": "^3.0.0",
+    "ethers": "^5.0.0",
+    "hardhat-contract-sizer": "^2.0.3"
+  }
+}
